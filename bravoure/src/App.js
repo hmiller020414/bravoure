@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react'
 import OMDB from './services/OMDB';
+import SeasonOverview from './components/season/SeasonOverview/SeasonOverview';
+import EpisodeOverview from './components/episode/EpisodeOverview/EpisodeOverview';
 
 const App = () => {
 
@@ -11,19 +13,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SeasonOverview />
+      <EpisodeOverview />
     </div>
   );
 }
