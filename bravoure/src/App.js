@@ -7,15 +7,21 @@ import EpisodeOverview from './components/episode/EpisodeOverview/EpisodeOvervie
 const App = () => {
 
   const [show, setShow] = useState()
+  const [season, setSeason] = useState()
 
   useEffect( async () => {
     const results = await OMDB.show()
     setShow(results)
   }, []);
 
+  useEffect( async () => {
+    const results = await OMDB.season(3)
+    setSeason(results)
+  })
+
   return (
     <div className="App">
-      <SeasonOverview show={show} />
+      <SeasonOverview show={show} season={season} />
       <EpisodeOverview />
     </div>
   );
