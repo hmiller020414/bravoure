@@ -12,9 +12,9 @@ const CarouselSlide = ({episode}) => {
 
     return (
         <div>
-            <img src={episodeData.Poster} alt={episodeData.Title} />
-            <h4>{episodeData.Title}</h4>
-            <p>{episodeData.Plot}</p>
+            <img src={episodeData?.Poster} alt={episodeData?.Title} />
+            <h4>{episodeData?.Title}</h4>
+            <p>{episodeData?.Plot}</p>
         </div>
     )
 }

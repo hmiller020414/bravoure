@@ -1,7 +1,7 @@
 import EpisodeImg from "../EpisodeImg/EpisodeImg"
 import EpisodeDetails from "../EpisodeDetails/EpisodeDetails"
 
-const EpisodeOverview = () => {
+const EpisodeOverview = ({episode}) => {
 
     return (
         <div>
