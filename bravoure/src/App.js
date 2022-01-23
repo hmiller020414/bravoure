@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react'
-import OMDB from './sources/OMDB';
+import OMDB from './services/OMDB';
 
 const App = () => {
 
