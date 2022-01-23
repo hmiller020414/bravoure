@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { useEffect, useState } from 'react'
 import OMDB from './services/OMDB';
 import SeasonOverview from './components/season/SeasonOverview/SeasonOverview';
@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <SeasonOverview show={show} season={season} />
-      <EpisodeOverview episode={episode} />
+      <SeasonOverview show={show} season={season} className="SeasonOverview" />
+      <EpisodeOverview episode={episode} className="EpisodeOverview" />
     </div>
   );
 }

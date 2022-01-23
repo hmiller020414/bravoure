@@ -1,4 +1,5 @@
 import CarouselSlide from "../CarouselSlide/CarouselSlide"
+import '../season.scss'
 
 const EpisodesCarousel = ({season}) => {
 
@@ -10,7 +11,7 @@ const EpisodesCarousel = ({season}) => {
         : null;
 
     return (
-        <div>
+        <div className="EpisodesCarousel">
             <h4>Episodes Carousel will go here</h4>
             {slides}
         </div>

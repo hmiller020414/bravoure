@@ -1,7 +1,9 @@
+import '../episode.scss'
+
 const EpisodeRating = ({rating}) => {
 
     return (
-        <div>
+        <div className="EpisodeRating">
             <p>{rating}/10</p>
         </div>
     )
