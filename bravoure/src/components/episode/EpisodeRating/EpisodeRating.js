@@ -1,8 +1,8 @@
-const EpisodeRating = () => {
+const EpisodeRating = ({rating}) => {
 
     return (
         <div>
-            <p>This episode got a 8/10 on IMDB</p>
+            <p>{rating}/10</p>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-const EpisodeImg = () => {
+const EpisodeImg = ({image, altText}) => {
 
     return (
         <div>
-            <h3>This is where the episode image will go</h3>
+            <img src={image} alt={altText} />
         </div>
     )
 }

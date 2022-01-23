@@ -8,6 +8,7 @@ const App = () => {
 
   const [show, setShow] = useState()
   const [season, setSeason] = useState()
+  const [episode, setEpisode] = useState()
 
   useEffect( async () => {
     const results = await OMDB.show()
@@ -19,10 +20,15 @@ const App = () => {
     setSeason(results)
   }, [])
 
+  useEffect( async () => {
+    const results = await OMDB.episode(4, 1)
+    setEpisode(results)
+  }, [])
+
   return (
     <div className="App">
       <SeasonOverview show={show} season={season} />
-      <EpisodeOverview />
+      <EpisodeOverview episode={episode} />
     </div>
   );
 }

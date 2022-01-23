@@ -5,9 +5,8 @@ const EpisodeOverview = ({episode}) => {
 
     return (
         <div>
-            <h2>Season 3, Episode 2</h2>
-            <EpisodeImg />
-            <EpisodeDetails />
+            <EpisodeImg image={episode?.Poster} altText={episode?.Title} />
+            <EpisodeDetails episode={episode} />
         </div>
     )
 }

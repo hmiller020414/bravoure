@@ -1,11 +1,13 @@
 import EpisodeRating from "../EpisodeRating/EpisodeRating"
 
-const EpisodeDetails = () => {
+const EpisodeDetails = ({episode}) => {
 
     return (
         <div>
-            <p>All the episode details will go here</p>
-            <EpisodeRating />
+            <p>{episode.Episode ? `Episode ${episode.Episode}` : null}</p>
+            <EpisodeRating rating={episode?.imdbRating} />
+            <h2>{episode?.Title}</h2>
+            <p>{episode?.Plot}</p>
         </div>
     )
 }
