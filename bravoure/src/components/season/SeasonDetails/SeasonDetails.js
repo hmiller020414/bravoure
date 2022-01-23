@@ -1,8 +1,10 @@
-const SeasonDetails = () => {
+const SeasonDetails = ({show}) => {
 
     return (
         <div>
-            <h3>A young, devout Catholic woman discovers that she was accidentally artificially inseminated.</h3>
+            <h2>Season 3</h2>
+            <h1>{show?.Title ?? null }</h1>
+            <p>{show?.Plot ?? null }</p>
         </div>
     )
 }

@@ -1,13 +1,14 @@
 import SeasonDetails from "../SeasonDetails/SeasonDetails"
 import EpisodesCarousel from "../EpisodesCarousel/EpisodesCarousel"
+import janeBG from '../../../images/janeBG.jpeg'
 
-const SeasonOverview = () => {
+const SeasonOverview = ({show}) => {
 
     return (
         <div>
-            <h1>Jane The Virgin, Season 3</h1>
-            <SeasonDetails />
+            <SeasonDetails show={show} />
             <EpisodesCarousel />
+            <img src={janeBG} alt="Jane" />
         </div>
     )
 }
