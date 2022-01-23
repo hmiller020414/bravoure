@@ -15,9 +15,9 @@ const App = () => {
   }, []);
 
   useEffect( async () => {
-    const results = await OMDB.season(3)
+    const results = await OMDB.season(4)
     setSeason(results)
-  })
+  }, [])
 
   return (
     <div className="App">
