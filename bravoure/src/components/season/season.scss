@@ -23,42 +23,65 @@
     }
     .EpisodesCarousel {
         display: flex;
+        flex-direction: column;
         overflow: hidden;
-        grid-column-gap: 28px;
         margin-left: 11%;
         justify-self: flex-end;
         height: 298px;
-        .CarouselSlide {
-            width: 200px;
-            position: relative;
-            img {
-                width: inherit;
-                height: 135px;
-                object-fit: cover;
+        .EpisodesCarousel-Inner {
+            display: flex;
+            grid-column-gap: 28px;
+            transition: all 250ms linear;
+            .CarouselSlide {
+                width: 200px;
+                position: relative;
+                img {
+                    width: inherit;
+                    height: 135px;
+                    object-fit: cover;
+                }
+                h4 {
+                    margin: 20px 0 10px 0;
+                    font-size: 0.9375rem;
+                }
+                p {
+                    font-size: 0.8125rem;
+                    height: 45px;
+                    overflow: hidden;
+                }
+                .CarouselSlide-EpNum {
+                    color: #000;
+                    background-color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    line-height: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
-            h4 {
-                margin: 20px 0 10px 0;
-                font-size: 0.9375rem;
-            }
-            p {
-                font-size: 0.8125rem;
-                height: 45px;
-                overflow: hidden;
-            }
-            .CarouselSlide-EpNum {
-                color: #000;
-                background-color: #fff;
-                width: 30px;
-                height: 30px;
-                font-size: 1rem;
-                font-weight: bold;
-                line-height: 1rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 0;
-                left: 0;
+        }
+        .EpisodesCarousel-Btns {
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px 20px 0 0;
+            grid-column-gap: 35px;
+            .EpisodesCarousel-Btn {
+                background: none;
+                border: none;
+                padding: 0;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                &:disabled {
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                }
             }
         }
     }
