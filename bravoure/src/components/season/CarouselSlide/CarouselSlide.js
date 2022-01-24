@@ -7,7 +7,7 @@ const CarouselSlide = ({episode, onEpisodeChange}) => {
     const [episodeData, setEpisodeData] = useState()
 
     useEffect( async () => {
-        const results = await OMDB.episode(4, episode)
+        const results = await OMDB.episode(3, episode)
         setEpisodeData(results)
     }, []);
 

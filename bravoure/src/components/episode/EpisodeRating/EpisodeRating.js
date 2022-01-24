@@ -7,7 +7,7 @@ const EpisodeRating = ({rating}) => {
     return (
         <div className="EpisodeRating">
             <FontAwesomeIcon icon={faStar} className="EpisodeRating-Star" />
-            <p><b>{rating}</b>/10</p>
+            {rating == 'N/A' ? <p><b>N/A</b></p> : <p><b>{rating}</b>/10</p> }
         </div>
     )
 }

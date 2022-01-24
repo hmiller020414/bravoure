@@ -16,12 +16,12 @@ const App = () => {
   }, []);
 
   useEffect( async () => {
-    const results = await OMDB.season(4)
+    const results = await OMDB.season(3)
     setSeason(results)
   }, [])
 
   useEffect( async () => {
-    const results = await OMDB.episode(4, 1)
+    const results = await OMDB.episode(3, 1)
     setEpisode(results)
   }, [])
 
