@@ -4,7 +4,7 @@ const SeasonDetails = ({show, season}) => {
 
     return (
         <div className="SeasonDetails">
-            <h2>{season?.Season ? `Season ${season.Season}` : null}</h2>
+            <p>{season?.Season ? `Season ${season.Season}` : null}</p>
             <h1>{show?.Title ?? null }</h1>
             <p>{show?.Plot ?? null }</p>
         </div>

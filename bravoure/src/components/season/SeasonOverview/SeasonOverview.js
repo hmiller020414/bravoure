@@ -6,10 +6,9 @@ import '../season.scss'
 const SeasonOverview = ({show, season}) => {
 
     return (
-        <div className="SeasonOverview">
+        <div className="SeasonOverview" style={{backgroundImage: `url(${janeBG})`}}>
             <SeasonDetails show={show} season={season} />
             <EpisodesCarousel season={season} />
-            <img src={janeBG} alt="Jane" />
         </div>
     )
 }

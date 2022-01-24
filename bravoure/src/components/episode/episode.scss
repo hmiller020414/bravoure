@@ -1,0 +1,40 @@
+.EpisodeOverview {
+    width: 515px;
+    .EpisodeImg {
+        height: calc(100% - 298px);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .EpisodeDetails {
+        height: 298px;
+        overflow: hidden;
+        .EpisodeDetails-Nums {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 45px 40px 40px 40px;
+            border-bottom: 1px solid #979797;
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 1.125rem;
+            }
+        }
+        .EpisodeDetails-Plot {
+            padding: 45px 40px 40px 40px;
+            h2 {
+                font-size: 1.6875rem;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+            p {
+                font-size: 1.1875rem;
+                height: 70px;
+                overflow: hidden;
+                overflow-y: scroll;
+            }
+        }
+    }
+}

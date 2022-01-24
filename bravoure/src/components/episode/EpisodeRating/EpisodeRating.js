@@ -4,7 +4,7 @@ const EpisodeRating = ({rating}) => {
 
     return (
         <div className="EpisodeRating">
-            <p>{rating}/10</p>
+            <p><b>{rating}</b>/10</p>
         </div>
     )
 }

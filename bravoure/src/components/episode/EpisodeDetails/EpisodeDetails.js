@@ -5,10 +5,14 @@ const EpisodeDetails = ({episode}) => {
 
     return (
         <div className="EpisodeDetails">
-            <p>{episode?.Episode ? `Episode ${episode.Episode}` : null}</p>
-            <EpisodeRating rating={episode?.imdbRating} />
-            <h2>{episode?.Title}</h2>
-            <p>{episode?.Plot}</p>
+            <div className="EpisodeDetails-Nums">
+                <p>{episode?.Episode ? `Episode ${episode.Episode}` : null} – {episode?.Released ?? null}</p>
+                <EpisodeRating rating={episode?.imdbRating} />
+            </div>
+            <div className="EpisodeDetails-Plot">
+                <h2>{episode?.Title}</h2>
+                <p>{episode?.Plot}</p>
+            </div>
         </div>
     )
 }

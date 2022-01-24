@@ -12,7 +12,6 @@ const EpisodesCarousel = ({season}) => {
 
     return (
         <div className="EpisodesCarousel">
-            <h4>Episodes Carousel will go here</h4>
             {slides}
         </div>
     )
