@@ -26,13 +26,3 @@ const OMDB = {
 }
 
 export default OMDB
-
-// Need to fetch the entire show to get plot and images (?t=Jane+the+Virgin&apikey=ca954a9a)
-//     From this I will need:
-//         Title, Plot, Poster
-// Need to fetch single season to get list of episodes (?t=Jane+the+Virgin&Season=3&apikey=ca954a9a)
-//      From this I will need:
-//          Episodes, Title, Poster, imdbRating, Released, Episode, Plot
-// Need to fetch each individual episode to get plot details and image (?t=Jane+the+Virgin&Season=3&Episode=1&apikey=ca954a9a)
-//     From this I will need:
-//         Title, Poster, imdbRating, Released, Episode, Plot

@@ -39,10 +39,13 @@ const EpisodesCarousel = ({season, onEpisodeChange}) => {
         }
     }
 
-    const checkIdx =() => {
+    const checkIdx = () => {
         if (currentIndex == 0) {
             setPrevBtnDisabled(true)
         } else if (currentIndex == seasonEpisodes?.length - 1) {
+            setNextBtnDisabled(true)
+        } else if (seasonEpisodes?.length <= 1) {
+            setPrevBtnDisabled(true)
             setNextBtnDisabled(true)
         } else {
             setPrevBtnDisabled(false)
