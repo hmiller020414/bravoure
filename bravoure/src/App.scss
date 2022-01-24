@@ -6,4 +6,7 @@
     @media screen and (max-width: 1024px) {
         flex-direction: column;
     }
+    @media screen and (max-width: 767px) {
+        min-height: 600px;
+    }
 }

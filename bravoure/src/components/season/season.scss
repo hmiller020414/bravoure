@@ -115,4 +115,39 @@
             }
         }
     }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        grid-row-gap: 30px;
+        .SeasonDetails {
+            transform: none;
+            margin-top: 95px;
+            p {
+                font-size: 0.875rem;
+                max-width: 270px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .EpisodesCarousel {
+            height: unset;
+            transform: none;
+            .EpisodesCarousel-Inner {
+                .CarouselSlide {
+                    h4 {
+                        display: none;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .EpisodesCarousel-Btns {
+                margin: 10px 5% 20px 0;
+                .EpisodesCarousel-Btn {
+                    color: #fff;
+                }
+            }
+        }
+    }
 }

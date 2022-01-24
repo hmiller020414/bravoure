@@ -21,13 +21,17 @@ const App = () => {
   }, [])
 
   useEffect( async () => {
-    const results = await OMDB.episode(4, 4)
+    const results = await OMDB.episode(4, 1)
     setEpisode(results)
   }, [])
 
+  const onEpisodeChange = (newEpisode) => {
+    setEpisode(newEpisode)
+  }
+
   return (
     <div className="App">
-      <SeasonOverview show={show} season={season} />
+      <SeasonOverview show={show} season={season} onEpisodeChange={onEpisodeChange} />
       <EpisodeOverview episode={episode} />
     </div>
   );

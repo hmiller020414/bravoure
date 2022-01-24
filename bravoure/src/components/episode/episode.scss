@@ -87,4 +87,33 @@
             }
         }
     }
+    @media screen and (max-width: 767px) {
+        .EpisodeImg {
+            display: none;
+        }
+        .EpisodeDetails {
+            .EpisodeDetails-Nums {
+                padding: 25px 5% 0px 5%;
+                border-top: none;
+                p {
+                    font-size: 0.875rem;
+                }
+                .EpisodeRating {
+                    grid-column-gap: 5px;
+                    .EpisodeRating-Star {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .EpisodeDetails-Plot {
+                padding: 25px 5% 40px 5%;
+                h2 {
+                    font-size: 1.125rem;
+                }
+                p {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
 }

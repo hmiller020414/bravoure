@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import OMDB from '../../../services/OMDB';
 import '../season.scss'
 
-const CarouselSlide = ({episode}) => {
+const CarouselSlide = ({episode, onEpisodeChange}) => {
 
     const [episodeData, setEpisodeData] = useState()
 
@@ -12,7 +12,7 @@ const CarouselSlide = ({episode}) => {
     }, []);
 
     return (
-        <div className="CarouselSlide">
+        <div className="CarouselSlide" onClick={() => {onEpisodeChange(episodeData)}}>
             <img src={episodeData?.Poster} alt={episodeData?.Title} />
             <h4>{episodeData?.Title}</h4>
             <p>{episodeData?.Plot}</p>

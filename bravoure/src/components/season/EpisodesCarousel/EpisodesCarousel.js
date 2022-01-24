@@ -5,12 +5,12 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react'
 
-const EpisodesCarousel = ({season}) => {
+const EpisodesCarousel = ({season, onEpisodeChange}) => {
 
     const seasonEpisodes = season?.Episodes
     const slides = seasonEpisodes?.length
         ? seasonEpisodes.map (ep =>
-            <CarouselSlide key={ep.Episode} episode={ep.Episode} />
+            <CarouselSlide key={ep.Episode} episode={ep.Episode} onEpisodeChange={onEpisodeChange} />
             )
         : null;
 
