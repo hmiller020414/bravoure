@@ -21,7 +21,7 @@ const App = () => {
   }, [])
 
   useEffect( async () => {
-    const results = await OMDB.episode(4, 2)
+    const results = await OMDB.episode(4, 4)
     setEpisode(results)
   }, [])
 

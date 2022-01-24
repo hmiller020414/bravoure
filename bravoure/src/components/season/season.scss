@@ -30,6 +30,7 @@
         height: 298px;
         .CarouselSlide {
             width: 200px;
+            position: relative;
             img {
                 width: inherit;
                 height: 135px;
@@ -41,6 +42,23 @@
             }
             p {
                 font-size: 0.8125rem;
+                height: 45px;
+                overflow: hidden;
+            }
+            .CarouselSlide-EpNum {
+                color: #000;
+                background-color: #fff;
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
+                font-weight: bold;
+                line-height: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
     }
