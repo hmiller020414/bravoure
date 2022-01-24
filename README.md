@@ -7,9 +7,9 @@ First, I set up my repository and then created my React App. I did some initial 
 ## Step 2 – Research + Initial API Calls
 Next, I received my OMDB API key and began to play around in their database to see the kind of data I would receive. I set up a services subfolder in my app and took notes on what information I needed to receive based on the designs provided for this assignment. Then I wrote three functions to fetch that data:
 
-### Show: From show, I receive the show name and plot details.
-### Season: From season, I receive the number of episodes in that season. I also receive episode titles, and IMDB ratings.
-### Episode: From episode, I also receive episode titles and IMDB ratings, but I also get the episode poster URL and plot details.
+##### Show: From show, I receive the show name and plot details.
+##### Season: From season, I receive the number of episodes in that season. I also receive episode titles, and IMDB ratings.
+##### Episode: From episode, I also receive episode titles and IMDB ratings, but I also get the episode poster URL and plot details.
 
 Once I had these, I tested them in the app component to make sure I was receiving everything properly.
 
