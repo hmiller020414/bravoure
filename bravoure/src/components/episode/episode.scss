@@ -21,6 +21,15 @@
             p {
                 font-size: 1.125rem;
             }
+            .EpisodeRating {
+                display: flex;
+                align-items: center;
+                grid-column-gap: 17px;
+                .EpisodeRating-Star {
+                    color: #EFD358;
+                    font-size: 1.3rem;
+                }
+            }
         }
         .EpisodeDetails-Plot {
             padding: 45px 40px 40px 40px;
