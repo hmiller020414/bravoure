@@ -18,6 +18,7 @@
             border-bottom: 1px solid #979797;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             p {
                 font-size: 1.125rem;
             }
@@ -43,6 +44,46 @@
                 height: 70px;
                 overflow: hidden;
                 overflow-y: scroll;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        position: relative;
+        .EpisodeImg {
+            height: 135px;
+            position: absolute;
+            width: 200px;
+            left: 5%;
+            top: 95px;
+        }
+        .EpisodeDetails {
+            height: unset;
+            .EpisodeDetails-Nums {
+                padding: 45px 5% 0px 5%;
+                border-top: 1px solid #979797;
+                border-bottom: none;
+                p {
+                    font-size: 1rem;
+                }
+                .EpisodeRating {
+                    grid-column-gap: 10px;
+                    .EpisodeRating-Star {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+            .EpisodeDetails-Plot {
+                padding: 45px 5% 60px 0;
+                padding-left: calc(5% + 225px);
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 1rem;
+                    height: unset;
+                }
             }
         }
     }
